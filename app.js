@@ -30,6 +30,6 @@ app.get('/', function(req, res, next){
 
 http.createServer(app).listen(process.env.PORT || config.port, function(){
 	console.log(
-		'Express server listening on port ' + config.port
+		'Express server listening on port ' + process.env.PORT || config.port
 	);
 });

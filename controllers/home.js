@@ -1,5 +1,5 @@
 var BaseController = require('./base'),
-		View = require('../views/base');
+		View = require('./views');
 
 module.exports = BaseController.extend({
 	name: "Home",
