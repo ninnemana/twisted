@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Twisted Rhythm</title>
+		<link rel='stylesheet' href='/css/main.css' />
+	</head>
+	<body>
+		<div class="container">
+
+			<header>
+				<a href="/" title="Twisted Rhythm | Home">
+					<img src="/img/logo.png" alt="Twisted Rhythm">
+				</a>
+			</header>
+
+				<!-- home page -->
+				<div class="home">
+					<article class="events">
+						<span class="heading">Events</span>
+					</article>
+					<article class="bio">
+						<span class="heading">The Band</span>
+					</article>
+					<article class="news">
+						<span class="heading">News</span>
+					</article>
+					<article class="media">
+						<span class="heading">Photos</span>
+					</article>
+				</div>
+				<div class="clear"></div>
+
+				<!-- footer -->
+				<footer>
+						<div class="content">
+								Twisted Rhythm &copy; 2014
+						</div>
+				</footer>
+
+		</div>
+	</body>
+</html>
