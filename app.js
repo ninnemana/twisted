@@ -4,7 +4,7 @@ var express = require('express'),
 	config = require('./config')(),
 	app = express(),
 	//MongoClient = require('mongodb').MongoClient,
-	Home = require('./controllers/Home');
+	Home = require('./controllers/home');
 
 // all environments
 app.set('port', process.env.PORT || 3000);
