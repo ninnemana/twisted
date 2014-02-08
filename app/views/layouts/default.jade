@@ -1,0 +1,33 @@
+doctype html
+html(lang='en', xmlns='http://www.w3.org/1999/xhtml', xmlns:fb='https://www.facebook.com/2008/fbml', itemscope='itemscope', itemtype='http://schema.org/Product')
+	include ../includes/head
+	body
+		header
+			.container
+				a.logo-link(href="/", title="Twisted Rhythm | Home")
+					img(src="/img/band/logo.png", alt="Twisted Rhythm")
+
+				nav.main-nav
+					ul
+						li
+							a(href="/" title="Home") Home
+						li
+							a(href="/events" title="Events") Events
+						li
+							a(href="/band" title="The Band") The Band
+						li
+							a(href="/news" title="News") News
+						li
+							a(href="/photos" title="Photos") Photos
+
+				img.band(src="/img/band/band.jpg", alt="Twisted Rhythm Band Members")
+
+		.container
+			block content
+			.clear
+
+			footer
+				.content
+					Twisted Rhythm &copy; 2014
+
+			include ../includes/foot

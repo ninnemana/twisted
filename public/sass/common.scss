@@ -1,0 +1,123 @@
+body{
+	background:black;
+	font-family: Verdana;
+	background: url('/img/dark/binding_dark.png') repeat #000;
+	margin: 0;
+	padding: 0;
+}
+
+.clear{
+	clear:both;
+}
+
+header{
+	background: black;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	width: 100%;
+	margin-bottom: 100px;
+	clear: both;
+
+	.logo-link{
+		background: #1a1a1a;
+		padding:5px;
+		z-index: 10;
+		position: absolute;
+		top: 30px;
+		left: 85px;
+		transform: rotateZ(-2deg);
+		-webkit-transform: rotateZ(-2deg);
+		-o-transform: rotateZ(-2deg);
+		-moz-transform: rotateZ(-2deg);
+		-ms-transform: rotateZ(-2deg);
+		height: 105px;
+		
+		img{
+			position: relative;
+			top: -45px;
+		}
+	}
+
+	.main-nav{
+		float:right;
+		margin-right:25%;
+		ul{
+			list-style:none;
+			li{
+				*float:left;
+				display:inline-block;
+				a{
+					color:white;
+				}
+			}
+		}
+	}
+
+	.band{
+		width: 647px;
+		z-index: 1;
+		margin: 155px 0 50px 138px;
+		border: 10px solid #1a1a1a;
+		transform: rotateZ(-2deg);
+		-webkit-transform: rotateZ(2deg);
+		-o-transform: rotateZ(2deg);
+		-moz-transform: rotateZ(2deg);
+		-ms-transform: rotateZ(2deg);
+	}
+}
+
+.container{
+	width: 1024px;
+	margin:auto;
+}
+
+.home{
+	margin-top: 25px;
+	min-height:550px;
+
+	article{
+		min-height:500px;
+		width: 21%;
+		margin-right:5%;
+		background: rgb(255, 255, 255);
+		background: -moz-linear-gradient(90deg, rgb(255, 255, 255) 30%, rgb(234, 234, 234) 70%);
+		background: -webkit-linear-gradient(90deg, rgb(255, 255, 255) 30%, rgb(234, 234, 234) 70%);
+		background: -o-linear-gradient(90deg, rgb(255, 255, 255) 30%, rgb(234, 234, 234) 70%);
+		background: -ms-linear-gradient(90deg, rgb(255, 255, 255) 30%, rgb(234, 234, 234) 70%);
+		background: linear-gradient(180deg, rgb(255, 255, 255) 30%, rgb(234, 234, 234) 70%);
+		border-radius:4px;
+		float:left;
+		position:relative;
+		z-index:2;
+		box-shadow: -2px -3px 5px 0px #000;
+
+		&:last-child{
+			margin-right:0;
+		}
+
+		span.heading{
+			background:rgb(106,187,231);
+			position:absolute;
+			top:-30px;
+			left:5px;
+			height:30px;
+			line-height: 30px;
+			width: 75%;
+			padding: 0 4px;
+			border-radius: 4px 4px 0 0;
+			z-index:1;
+			opacity: 1.6;
+			font-size: 18px;
+			color:rgb(64,64,64);
+		}
+	}
+}
+
+footer{
+	color:rgb(64,64,64);
+	margin-top:100px;
+	padding-top:5px;
+	border-top: 1px solid rgb(64,64,64);
+}
