@@ -1,28 +1,18 @@
-<div class="navbar-inner" data-ng-controller="HeaderController">
-    <ul class="nav">
-        <li>
-            <a class="brand" href="/">MEAN - A Modern Stack</a>
-        </li>
-        <li data-ng-repeat="item in menu" data-ng-show="global.user" ui-route="/{{item.link}}" ng-class="{active: $uiRoute}">
-            <a href="#!/{{item.link}}">{{item.title}}</a>
-        </li>
-    </ul>
-    <ul class="nav pull-right" data-ng-hide="global.authenticated">
-        <li><a href="signup">Signup</a>
-        </li>
-        <li class="divider-vertical"></li>
-        <li><a href="signin">Signin</a>
-        </li>
-    </ul>
-    <ul class="nav pull-right" data-ng-show="global.authenticated">
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-				{{global.user.name}} <b class="caret"></b>
-			</a>
-            <ul class="dropdown-menu">
-                <li><a href="/signout">Signout</a>
-                </li>
-            </ul>
-        </li>
-    </ul>
-</div>
+<nav role="navigation" class="navbar navbar-default navbar-fixed-top navbar-inverse" ng-controler="HeaderController">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button data-toggle="collapse" type="button" data-target="#bs-example-navbar-collapse-1" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/" title="Twisted Rhythm " class="navbar-brand"><span><strong>Twisted</strong><span>Rhythm</span></span></a>
+		</div>
+		<div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse pull-right">
+			<ul class="nav navbar-nav">
+				<li ng-class="getClass('/')"><a href="#!/" title="Home">Home</a></li>
+				<li class="divider"></li>
+				<li ng-class="getClass('/events')"><a href="#!/events" title="Events">Upcoming Events</a></li>
+				<li class="divider"></li>
+				<li ng-class="getClass('/bio')"><a href="#!/bio" title="The Band">Band Bio</a></li>
+				<li class="divider"></li>
+				<li ng-class="getClass('/news')"><a href="#!/news" title="News">News</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>

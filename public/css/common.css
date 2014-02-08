@@ -1,102 +1,93 @@
 body {
-  background: black;
   font-family: Verdana;
-  background: url("/img/dark/binding_dark.png") repeat black;
+  background: black;
   margin: 0;
-  padding: 0; }
+  padding: 50px 0 0 0; }
+
+a {
+  color: white; }
+  a:visited, a:hover {
+    color: white;
+    text-decoration: none; }
 
 .clear {
   clear: both; }
 
-header {
-  background: black;
+.home-banner {
+  background: url("/img/band/band.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   width: 100%;
-  margin-bottom: 100px;
+  height: 655px;
   clear: both; }
-  header .logo-link {
-    background: #1a1a1a;
-    padding: 5px;
-    z-index: 10;
-    position: absolute;
-    top: 30px;
-    left: 85px;
-    transform: rotateZ(-2deg);
-    -webkit-transform: rotateZ(-2deg);
-    -o-transform: rotateZ(-2deg);
-    -moz-transform: rotateZ(-2deg);
-    -ms-transform: rotateZ(-2deg);
-    height: 105px; }
-    header .logo-link img {
-      position: relative;
-      top: -45px; }
-  header .main-nav {
-    float: right;
-    margin-right: 25%; }
-    header .main-nav ul {
-      list-style: none; }
-      header .main-nav ul li {
-        *float: left;
-        display: inline-block; }
-        header .main-nav ul li a {
-          color: white; }
-  header .band {
-    width: 647px;
-    z-index: 1;
-    margin: 155px 0 50px 138px;
-    border: 10px solid #1a1a1a;
-    transform: rotateZ(-2deg);
-    -webkit-transform: rotateZ(2deg);
-    -o-transform: rotateZ(2deg);
-    -moz-transform: rotateZ(2deg);
-    -ms-transform: rotateZ(2deg); }
 
-.container {
+.page-content {
+  min-height: 650px; }
+  .page-content .container {
+    width: 1024px;
+    margin: 40px auto;
+    border-radius: 3px;
+    position: relative; }
+
+.page-content .container .background {
   width: 1024px;
-  margin: auto; }
+  background: #999;
+  min-height: 650px;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; }
 
-.home {
-  margin-top: 25px;
-  min-height: 550px; }
-  .home article {
-    min-height: 500px;
-    width: 21%;
-    margin-right: 5%;
-    background: white;
-    background: -moz-linear-gradient(90deg, white 30%, #eaeaea 70%);
-    background: -webkit-linear-gradient(90deg, white 30%, #eaeaea 70%);
-    background: -o-linear-gradient(90deg, white 30%, #eaeaea 70%);
-    background: -ms-linear-gradient(90deg, white 30%, #eaeaea 70%);
-    background: linear-gradient(180deg, white 30%, #eaeaea 70%);
-    border-radius: 4px;
-    float: left;
-    position: relative;
-    z-index: 2;
-    box-shadow: -2px -3px 5px 0px #000; }
-    .home article:last-child {
-      margin-right: 0; }
-    .home article span.heading {
-      background: #6abbe7;
-      position: absolute;
-      top: -30px;
-      left: 5px;
-      height: 30px;
-      line-height: 30px;
-      width: 75%;
-      padding: 0 4px;
-      border-radius: 4px 4px 0 0;
-      z-index: 1;
-      opacity: 1.6;
-      font-size: 18px;
-      color: #404040; }
+.page-content .body {
+  width: 1004px;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 10px; }
+  .page-content .body h1 {
+    display: block;
+    width: 100%;
+    border-bottom: 5px solid #fff;
+    padding: 0 0 5px 0; }
+    .page-content .body h1 span {
+      font-size: 17px;
+      line-height: 55px; }
+  .page-content .body .events-tbl {
+    border-collapse: collapse;
+    margin: 25px 0;
+    width: 75%; }
+    .page-content .body .events-tbl td {
+      border: 3px solid white;
+      padding: 5px 10px; }
+
+.news-page p {
+  font-size: 18px; }
+.news-page h1 {
+  margin-bottom: 30px; }
 
 footer {
   color: #404040;
-  margin-top: 100px;
+  margin: 15px 0;
   padding-top: 5px;
-  border-top: 1px solid #404040; }
+  height: 30px; }
+  footer .contact {
+    float: right;
+    padding: 0 10px 0 0; }
+    footer .contact a, footer .contact span {
+      margin-left: 5px; }
+    footer .contact span {
+      color: #999; }
+    footer .contact a {
+      color: white; }
+      footer .contact a:hover, footer .contact a:visited {
+        color: white;
+        text-decoration: none; }
+      footer .contact a:hover {
+        text-shadow: 0px 1px 2px #999; }
 
 /*# sourceMappingURL=common.css.map */
