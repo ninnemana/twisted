@@ -5,13 +5,15 @@
 		<link rel='stylesheet' href='/css/main.css' />
 	</head>
 	<body>
-		<div class="container">
-
-			<header>
-				<a href="/" title="Twisted Rhythm | Home">
+		<header>
+			<div class="container">
+				<a href="/" class="logo-link" title="Twisted Rhythm | Home">
 					<img src="/img/logo.png" alt="Twisted Rhythm">
 				</a>
-			</header>
+				<img src="/img/band.jpg" class="band" alt="Twisted Rhythm Band Members">
+			</div>
+		</header>
+		<div class="container">
 
 				<!-- home page -->
 				<div class="home">
